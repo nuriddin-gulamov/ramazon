@@ -13,6 +13,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  height: 100%;
 }
 
 @media (max-width: 1300px) {
@@ -35,7 +37,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 135vh;
   background: rgb(245, 245, 245);
   padding: 20px;
   border-radius: 30px;
@@ -97,6 +99,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 /* .main__sahar,
@@ -127,4 +130,18 @@ body {
   width: 100%;
   text-align: center;
   height: 100px;
+  margin-top: 15px;
+}
+
+.main__sahar-dua {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+}
+
+.main__sahar-dua span {
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: bold;
 }
