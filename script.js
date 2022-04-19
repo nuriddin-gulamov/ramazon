@@ -122,20 +122,7 @@ setInterval(() => {
           ? '0' + Math.floor((millisecondsLeft / (1000 * 60 * 60)) % 24)
           : Math.floor((millisecondsLeft / (1000 * 60 * 60)) % 24);
     leftTime.innerHTML = leftHours + ':' + leftMinutes + ':' + leftSeconds;
-  } else if (
-    +(
-      catchedDate.getHours().toString() +
-      (catchedDate.getMinutes().toString().length === 1
-        ? '0' + catchedDate.getMinutes()
-        : catchedDate.getMinutes())
-    ) < +closeTimeData.replace(':', '') &&
-    +(
-      catchedDate.getHours().toString() +
-      (catchedDate.getMinutes().toString().length === 1
-        ? '0' + catchedDate.getMinutes()
-        : catchedDate.getMinutes())
-    ) > +openTimeData.replace(':', '')
-  ) {
+  } else {
     closeTimeData =
       ramadanTimes[
         (catchedDate.getMonth() === 3 ? 'Aprel' : 'May') +
